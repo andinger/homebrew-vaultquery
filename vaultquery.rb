@@ -11,7 +11,7 @@ class Vaultquery < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/andinger/vaultquery/releases/download/v3.0.0/vaultquery_3.0.0_darwin_amd64.tar.gz"
-      sha256 "c6f34f61dc6186e95c74285f60b258300b42bd498b5936be76fd140b50f88301"
+      sha256 "6de3812cf9be5a6e3a3407470d56dfdedd9dd90cb2d6b2fc6df708e9701158eb"
 
       define_method(:install) do
         bin.install "vaultquery"
@@ -19,7 +19,7 @@ class Vaultquery < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/andinger/vaultquery/releases/download/v3.0.0/vaultquery_3.0.0_darwin_arm64.tar.gz"
-      sha256 "1811bad77dcd5d9fe20a3dc1f0803451e7fd2018b87a4f87dea71322c5007057"
+      sha256 "5e795fa515663d6f11b5b62148a5202c6a00c7e9c8b1d7a8860fe7fb7ad0af1c"
 
       define_method(:install) do
         bin.install "vaultquery"
@@ -30,14 +30,14 @@ class Vaultquery < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/andinger/vaultquery/releases/download/v3.0.0/vaultquery_3.0.0_linux_amd64.tar.gz"
-      sha256 "dcddd6d4fae3bc1ba30b7ebe112f4d6876a4bcda7d2ecf12b190a5e7be57c2cf"
+      sha256 "7a461afdebea849b636934c16eefaac43a1a660c143b7d23c48dd1160895c7ed"
       define_method(:install) do
         bin.install "vaultquery"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/andinger/vaultquery/releases/download/v3.0.0/vaultquery_3.0.0_linux_arm64.tar.gz"
-      sha256 "2411c28453ff464c892b58e428e0b779fff2a32c5c9bd9e8f7a5251035ebf8a4"
+      sha256 "6f41b0199ca6f33530d48b0b1104e0d4cea091f0c21ccadf65aa1fc00f872d6d"
       define_method(:install) do
         bin.install "vaultquery"
       end
